@@ -1,108 +1,53 @@
-/* Reset básico para remover margens e paddings padrão */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Colheita do Milho</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-/* Estilo geral do corpo da página */
-body {
-  font-family: 'Arial', sans-serif;
-  background-color: #f0f4f8;
-  color: #333;
-  line-height: 1.6;
-}
+  <header>
+    <h1>A Colheita do Milho</h1>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/7/71/Milho_colheita.jpg" alt="Campo de milho" width="600">
+    <p>Conheça o ciclo do milho, desde a plantação até o consumo.</p>
+    <nav>
+      <ul>
+        <li><a href="#producao">Produção</a></li>
+        <li><a href="#consumo">Consumo</a></li>
+        <li><a href="#importancia">Importância</a></li>
+      </ul>
+    </nav>
+  </header>
 
-/* Cabeçalho */
-header {
-  background-color: #4CAF50;
-  padding: 20px;
-  text-align: center;
-  color: #fff;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
+  <main>
+    <section id="producao">
+      <h2>PRODUÇÃO</h2>
+      <p>Os agricultores preparam o solo, semeiam o milho e acompanham seu crescimento com dedicação. A colheita ocorre quando as espigas atingem seu ponto ideal, garantindo um produto de qualidade.</p>
+    </section>
 
-header h1 {
-  font-size: 2em;
-  margin-bottom: 10px;
-}
+    <section id="consumo">
+      <h2>CONSUMO</h2>
+      <p>O milho colhido é processado de diversas formas: consumido in natura, transformado em farinha, óleo, pipoca e outros derivados. Está presente em nossas mesas e também na alimentação animal.</p>
+    </section>
 
-/* Menu de navegação */
-nav {
-  margin-top: 15px;
-}
+    <section id="importancia">
+      <h2>IMPORTÂNCIA</h2>
+      <p>A colheita do milho representa não apenas alimento, mas também geração de renda, emprego e desenvolvimento para o campo e a cidade.</p>
+    </section>
 
-nav ul {
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-}
+    <section class="gallery">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/2/27/Milho_na_espiga.jpg" alt="Milho na espiga">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/7/71/Milho_colheita.jpg" alt="Colheita de milho">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Milho_seco.jpg" alt="Milho seco colhido">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/9/94/Milho_em_sacos.jpg" alt="Milho embalado para consumo">
+    </section>
+  </main>
 
-nav ul li a {
-  text-decoration: none;
-  color: #fff;
-  font-weight: bold;
-  padding: 8px 12px;
-  border-radius: 4px;
-  transition: background-color 0.3s, color 0.3s;
-}
+  <footer>
+    <p>&copy; 2025 Colheita do Milho. Todos os direitos reservados.</p>
+  </footer>
 
-nav ul li a:hover {
-  background-color: #45a049;
-  color: #fff;
-}
-
-/* Conteúdo principal */
-main {
-  padding: 40px 20px;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-/* Seções */
-section {
-  margin-bottom: 40px;
-}
-
-section h2 {
-  font-size: 1.8em;
-  margin-bottom: 15px;
-  color: #4CAF50;
-}
-
-/* Texto de conteúdo */
-p {
-  font-size: 1.1em;
-  margin-bottom: 15px;
-}
-
-/* Galeria de imagens */
-.gallery {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 20px;
-}
-
-.gallery img {
-  width: 100%;
-  height: auto;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-  transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.gallery img:hover {
-  transform: scale(1.05);
-  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
-}
-
-/* Rodapé */
-footer {
-  background-color: #333;
-  color: #fff;
-  text-align: center;
-  padding: 15px 20px;
-  margin-top: 40px;
-  font-size: 0.9em;
-}
+</body>
+</html>
